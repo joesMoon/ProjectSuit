@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+/* board.css 파일로 생성 */
+
+	/********** 게시판 리스트 화면 **********/
+	
+	/* 리스트 부분 */
+	#boardList{margin-top:10px; /* height:110px; */}
+	#boardList table{width:96%; padding:0px; border:1px solid #000066; border-bottom:0px;}	
+	#boardList tr{padding:0px;}	
+	#boardList th, #boardList td{padding:8px; border-bottom:1px solid #000066; }	
+	#boardList th{border-right:1px solid #000066; background-color:#e7e7e7;}
+
+	#boardList .borcle{border-right:0px; }	
+	#boardList .rCount{font-size:10px; color:red;}
+	
+	
+	/********** 게시판 상세 화면 **********/
+   #boardPwdBut{width:96%; margin-top:10px;}
+   #boardPwdBut #btd1{width:70%; text-align:left; vertical-align:bottom;}
+   #boardPwdBut #btd2{width:30%; text-align:right;vertical-align:bottom;}
+   #boardPwdBut input{margin-bottom:0px; margin-left:5px;}
+   
+   #msg{padding-left:4px; vertical-align:middle; font-weight:bold;}   
+   #pwdChk #l_pwd{vertical-align:bottom;}
+   #pwdChk #b_pwd{border:1px dotted #000066;}   
+      
+   /*********** 게시판 입력 화면 **********/
+   #title{width:480px}      
+   #content{border:1px solid #000066; width:780px; height:200px;}
+   .contentContainer .contentBtn{width:96%; margin-top:10px; text-align:right;} 

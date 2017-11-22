@@ -1,0 +1,119 @@
+
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Helvetica, sans-serif;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+}
+
+aside {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+}
+
+.content-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1em;
+}
+
+pre span {
+  color: #ff4593;
+}
+pre span span {
+  color: var(--active);
+}
+
+h2, h3 {
+  font-weight: 200;
+  margin: 0 0 .5em 0;
+}
+
+h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+h3::before {
+  content: '';
+  border: .5em solid transparent;
+}
+
+aside {
+  background: #313435;
+  background-image: -webkit-linear-gradient(150deg, #281234, #4b96cf), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/107782/jeans.jpg);
+  background-image: linear-gradient(-60deg, #281234, #4b96cf), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/107782/jeans.jpg);
+  background-size: cover;
+  background-position: 100% 50%;
+  background-blend-mode: overlay;
+  color: #eee;
+}
+
+aside h3 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+aside h3::before {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  border-left-color: var(--active);
+  border-width: .4em 0 .4em .6em;
+  margin-left: .5em;
+}
+
+section {
+  background: #eee;
+}
+
+section h3::before {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  border-right-color: var(--active);
+  border-width: .4em .6em .4em 0;
+  margin-right: .5em;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.row > * + * {
+  padding-left: 2em;
+}
